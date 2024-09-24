@@ -3,7 +3,8 @@ import { createClient, ContentfulClientApi, EntryCollection, Entry } from 'conte
 
 const client: ContentfulClientApi = createClient({
   space: import.meta.env.VITE_CONTENTFUL_SPACE_ID as string,
-  accessToken: import.meta.env.VITE_CONTENTFUL_ACCESS_TOKEN as string
+  accessToken: import.meta.env.VITE_CONTENTFUL_ACCESS_TOKEN as string,
+  environment: import.meta.env.VITE_CONTENTFUL_ENVIRONMENT
 })
 
 // Fetching Entries by Content Type
